@@ -43,9 +43,9 @@ for tif in tifs:
         crs_ok = src.crs == ref_crs
         bounds_ok = src.bounds == ref_bounds
         
-        status_shape = "✅" if shape_ok else "❌"
-        status_crs = "✅" if crs_ok else "❌"
-        status_bounds = "✅" if bounds_ok else "❌"
+        status_shape = "OK" if shape_ok else "NO"
+        status_crs = "OK" if crs_ok else "NO"
+        status_bounds = "OK" if bounds_ok else "NO"
         
         print(f"[{status_crs} CRS] [{status_shape} Shape] [{status_bounds} Bounds] {nome} | Shape: {src.shape}")
         

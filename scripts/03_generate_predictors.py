@@ -22,7 +22,7 @@ arquivo_ocorrencias = 'data/raw/ocorrencias_canola_sdm_desafio.csv'
 
 molde = rioxarray.open_rasterio(os.path.join(OUT_DIR, 'altitude.tif')).squeeze()
 
-# 🛡️ O SEGREDO DO NDVI: Usar as bordas exatas da Altitude para buscar o Satélite!
+
 bounds = molde.rio.bounds()
 bbox_cirurgica = [bounds[0], bounds[1], bounds[2], bounds[3]]
 print(f"Buscando Sentinel-2 exatamente na área do Molde: {bbox_cirurgica}")
