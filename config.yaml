@@ -19,4 +19,4 @@ processing:
 
 api:
   url: "https://cds.climate.copernicus.eu/api"
-  key: "ca528f95-9841-45e2-9747-bb087f721c5f"  
+  key: "SUA_CHAVE"  
