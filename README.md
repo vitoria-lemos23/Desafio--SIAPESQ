@@ -43,7 +43,7 @@ Recomenda-se o uso do Anaconda/Miniconda para gerenciar as dependências espacia
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU_USUARIO/Desafio_SIAPESQ.git
+git clone https://github.com/vitoria-lemos23/Desafio--SIAPESQ
 cd Desafio_SIAPESQ
 
 # Instale as dependências
@@ -75,9 +75,9 @@ python run_pipeline.py \
 
 ## 📊 Resultados e Validação
 
-<img src="C:\Users\vitor\my projects\Desafio_SIAPESQ\project\outputs\maps\evapotranspiracao_abr_ago_validacao.png" width="50%" alt="Texto Alternativo">
+<img src="outputs\maps\evapotranspiracao_abr_ago_validacao.png" width="50%" alt="Texto Alternativo">
 
-<img src="C:\Users\vitor\my projects\Desafio_SIAPESQ\project\outputs\maps\uso_solo_validacao.png" width="50%" alt="Texto Alternativo">
+<img src="outputs\maps\uso_solo_validacao.png" width="50%" alt="Texto Alternativo">
 
 
 
