@@ -1,0 +1,22 @@
+area:
+  bbox_stac:
+  - -58.0
+  - -35.0
+  - -43.0
+  - -20.0
+  east: -43.0
+  north: -20.0
+  south: -35.0
+  west: -58.0
+period:
+  end: '2025-09-30'
+  start: '2025-04-01'
+processing:
+  cloud_cover_max: 50
+  target_crs: EPSG:4326
+  target_resolution: 0.001
+
+
+api:
+  url: "https://cds.climate.copernicus.eu/api"
+  key: "ca528f95-9841-45e2-9747-bb087f721c5f"  

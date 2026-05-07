@@ -1,0 +1,26 @@
+# ---------------------------------------------
+# 2. Dados Brutos e Pesados (Prevenção de sobrecarga do Git)
+# ---------------------------------------------
+*.nc
+*.tif
+*.tiff
+data/raw/
+outputs/rasters/
+
+
+# ---------------------------------------------
+# 3. Cache do Python e Ambientes Virtuais
+# ------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+
+# ---------------------------------------------
+# 4. Arquivos do Sistema e IDEs
+# ---------------------------------------------
+.vscode/
+.idea/
+.DS_Store

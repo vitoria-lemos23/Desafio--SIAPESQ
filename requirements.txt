@@ -1,0 +1,19 @@
+# Manipulação de Dados e Matemática
+pandas
+numpy
+PyYAML
+
+# Processamento de Dados Espaciais e Rasters
+xarray
+rioxarray
+rasterio
+netCDF4
+
+# APIs de Satélite e Nuvem (Cloud Downscaling)
+cdsapi
+pystac-client
+planetary-computer
+odc-stac
+
+# Visualização e Validação
+matplotlib
