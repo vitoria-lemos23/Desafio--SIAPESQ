@@ -63,7 +63,7 @@ Abra o arquivo config.yaml na raiz do projeto e insira a sua chave:
 ```
 
 ## Executando o Orquestrador
-Com as dependências instaladas e a chave configurada, execute o pipeline com um único comando na raiz do projeto:
+Com as dependências instaladas e a chave configurada, execute o pipeline com um único comando na raiz do projeto para Linux:
 ``` bash
 python run_pipeline.py \
   --occurrences data/raw/ocorrencias_canola_sdm_desafio.csv \
@@ -71,6 +71,10 @@ python run_pipeline.py \
   --end-date 2025-09-30 \
   --area="-20,-58,-35,-43" \
   --output outputs/rasters
+```
+# Windows
+``` bash
+  python run_pipeline.py --occurrences data/raw/ocorrencias_canola_sdm_desafio.csv --start-date 2025-04-01 --end-date 2025-09-30 --area="-20,-58,-35,-43" --output outputs/rasters
 ```
 
 ## 📊 Resultados e Validação
