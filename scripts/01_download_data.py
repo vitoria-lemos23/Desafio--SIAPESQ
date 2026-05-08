@@ -15,10 +15,10 @@ import cdsapi
 with open('config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
-# Deverá colocar a sua própria chave aqui
+# A chave e a URL que colocou no config.yaml será inputada aqui
 c = cdsapi.Client(
-    url=config['api']['cds_url'],
-    key=config['api']['cds_key']
+    url=config['api']['url'],
+    key=config['api']['key']
 )
 bbox = config['area']['bbox_stac']
 periodo = f"{config['period']['start']}/{config['period']['end']}"

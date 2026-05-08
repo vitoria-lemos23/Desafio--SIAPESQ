@@ -48,7 +48,7 @@ def rodar_scripts():
     ]
 
     for script in scripts:
-        print(f"▶️ Iniciando: {script} ...")
+        print(f"Iniciando: {script}")
 
         # subprocess manda o terminal rodar o comando automaticamente
         resultado = subprocess.run(["python", script])
