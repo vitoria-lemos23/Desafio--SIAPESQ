@@ -62,22 +62,38 @@ Abra o arquivo config.yaml na raiz do projeto e insira a sua chave:
   cds_key: "COLOQUE_SUA_CHAVE_AQUI"
 ```
 
+
+## Área de Estudo (Dados do escopo do desafio)
+``` bash
+--area="-20,-58,-35,-43"
+```
+
 ## Executando o Orquestrador
-Com as dependências instaladas e a chave configurada, execute o pipeline com um único comando na raiz do projeto para Linux:
+Com as dependências instaladas e a chave configurada, execute o pipeline com um único comando na raiz do projeto:
+# Linux / macOS (Bash)
 ``` bash
 python run_pipeline.py \
   --occurrences data/raw/ocorrencias_canola_sdm_desafio.csv \
   --start-date 2025-04-01 \
   --end-date 2025-09-30 \
-  --area="-20,-58,-35,-43" \
+  --area="-28.0,-52.7,-28.5,-52.2" \
   --output outputs/rasters
 ```
-# Windows
+# Para ambientes Windows (CMD)
 ``` bash
-  python run_pipeline.py --occurrences data/raw/ocorrencias_canola_sdm_desafio.csv --start-date 2025-04-01 --end-date 2025-09-30 --area="-20,-58,-35,-43" --output outputs/rasters
+ python run_pipeline.py --occurrences data/raw/ocorrencias_canola_sdm_desafio.csv --start-date 2025-04-01 --end-date 2025-09-30 --area="-28.0,-52.7,-28.5,-52.2" --output outputs/rasters
 ```
-
+# Para ambientes Windows (PowerShell)
+``` bash
+python run_pipeline.py `
+  --occurrences data/raw/ocorrencias_canola_sdm_desafio.csv `
+  --start-date 2025-04-01 `
+  --end-date 2025-09-30 `
+  --area="-28.0,-52.7,-28.5,-52.2" `
+  --output outputs/rasters
+```
 ## 📊 Resultados e Validação
+Resultado obtido usando os as coordenadas do desafio
 
 <img src="outputs\maps\evapotranspiracao_abr_ago_validacao.png" width="50%" alt="Texto Alternativo">
 

@@ -2,6 +2,7 @@ import argparse
 import subprocess
 import yaml
 import os
+import sys
 
 print("==================================================")
 print("PIPELINE DE VARIÁVEIS AMBIENTAIS SDM")
@@ -51,7 +52,7 @@ def rodar_scripts():
         print(f"Iniciando: {script}")
 
         # subprocess manda o terminal rodar o comando automaticamente
-        resultado = subprocess.run(["python", script])
+        resultado = subprocess.run([sys.executable, script])
         
         if resultado.returncode != 0:
             print(f"\nERRO FATAL: O pipeline quebrou durante a execução de {script}.")
